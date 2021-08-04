@@ -37,4 +37,32 @@ git status
 
 9. Verifique a diferença entre a sua branch e main?
 
-`git diff main feature/{nome-sobrenome}`
+` git diff main feature/{nome-sobrenome}`
+
+10. Alteração mensagem com Amend
+
+` git commit --amend -m “nova mensagem”`
+
+11. Reverter commit
+
+` git revert {id_commit}`
+
+12. Salvar stash
+
+```
+git stash save “add uma atividade incompleta”
+git stash list
+git stash show
+```
+
+13. Unir 2 commit ou mais
+
+```
+git rebase -i HEAD~3
+```
+Use: 
+“pick ..
+squash ..
+squash ..”
+
+14. Faça uma PR para o repositorio original https://github.com/hesketh-carlos/41SCJ
