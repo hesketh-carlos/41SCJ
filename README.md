@@ -56,13 +56,15 @@ git stash show
 ```
 
 13. Unir 2 commit ou mais com Squash
-```
-git rebase -i HEAD~3
-```
+
 Use: 
 “pick ..
 squash ..
 squash ..”
+
+```
+git rebase -i HEAD~3
+```
 
 14. Adicione o arquivo .gitigone para não versionar arquivos com extensão .log, faço o teste.
  
